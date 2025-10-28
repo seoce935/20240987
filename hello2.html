@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>헬로 2 페이지</title>
+    <style>
+        .box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+            display: inline-block;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h1>안녕하세요!</h1>
+        <p th:text="${username} + '님.'">홍길동님.</p>
+        <p th:text="${greeting}">방갑습니다.</p>
+        <p th:text="${today}"></p>
+        <p th:text="${weather}"></p>
+        <p th:text="${detail}">매우 좋습니다.</p>
+        
+        <br>
+        <a href="/">홈페이지 메인</a>
+    </div>
+
+</body>
+</html>
